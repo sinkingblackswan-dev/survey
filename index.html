@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risk Preference Hazard Prioritiser</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+    <script src="app.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Risk Preference Hazard Prioritiser</h1>
+      <p>
+        Adjust the sliders to reflect how strongly you want to prioritise each
+        dimension of risk. The chart will reorder the hazards in real time based
+        on your preferences.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="controls" aria-labelledby="preferences-heading">
+        <h2 id="preferences-heading">Your risk preferences</h2>
+        <form id="preferences-form">
+          <div class="control">
+            <label for="safety">Safety &amp; wellbeing</label>
+            <input
+              type="range"
+              id="safety"
+              name="safety"
+              min="0"
+              max="10"
+              step="1"
+              value="7"
+            />
+            <output for="safety" data-unit="%"></output>
+            <p class="control-hint">
+              Higher values mean you want to focus on hazards that threaten
+              people and operations.
+            </p>
+          </div>
+          <div class="control">
+            <label for="financial">Financial stability</label>
+            <input
+              type="range"
+              id="financial"
+              name="financial"
+              min="0"
+              max="10"
+              step="1"
+              value="5"
+            />
+            <output for="financial" data-unit="%"></output>
+            <p class="control-hint">
+              Higher values emphasise hazards that can cause direct monetary
+              loss or business disruption.
+            </p>
+          </div>
+          <div class="control">
+            <label for="environmental">Environmental impact</label>
+            <input
+              type="range"
+              id="environmental"
+              name="environmental"
+              min="0"
+              max="10"
+              step="1"
+              value="6"
+            />
+            <output for="environmental" data-unit="%"></output>
+            <p class="control-hint">
+              Higher values prioritise hazards that damage the environment or
+              community assets.
+            </p>
+          </div>
+          <div class="weights-panel" aria-live="polite">
+            <h3>Normalised emphasis</h3>
+            <p class="weights-panel-hint">
+              These percentages show how the sliders combine into weights for
+              the scoring formula.
+            </p>
+            <dl class="weights-breakdown">
+              <div>
+                <dt>Safety &amp; wellbeing</dt>
+                <dd data-dimension="safety">0%</dd>
+              </div>
+              <div>
+                <dt>Financial stability</dt>
+                <dd data-dimension="financial">0%</dd>
+              </div>
+              <div>
+                <dt>Environmental impact</dt>
+                <dd data-dimension="environmental">0%</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="form-actions">
+            <button type="button" id="balance-weights" class="button ghost">
+              Balance weights
+            </button>
+            <button type="button" id="reset-weights" class="button">
+              Reset to defaults
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="chart-section" aria-labelledby="chart-heading">
+        <h2 id="chart-heading">Prioritised hazards</h2>
+        <canvas id="hazard-chart" role="img" aria-label="Hazard priority bar chart"></canvas>
+        <p class="chart-description">
+          Scores combine inherent hazard severity with your preference weights.
+          Hover over a bar to see the underlying data.
+        </p>
+        <aside class="top-hazard" aria-live="polite">
+          <h3>Current top priority</h3>
+          <p class="top-hazard-overview">
+            <span data-top-hazard-name>Loading…</span>
+            <span class="top-hazard-score" data-top-hazard-score></span>
+          </p>
+          <p class="top-hazard-metrics" data-top-hazard-reason></p>
+        </aside>
+        <div class="hazard-table" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        This prototype uses illustrative hazard data. Adjust the formula in
+        <code>app.js</code> to reflect your organisation's risk model.
+      </p>
+    </footer>
+  </body>
+</html>
