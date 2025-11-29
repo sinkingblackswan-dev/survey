@@ -1,0 +1,66 @@
+id,category,attribute_text
+H_FREQ,Hazard,"Frequency
+(how often do we have these events?)"
+H_LIKE,Hazard,"Likelihood in the next year
+(will this happen next year?)"
+H_SPED,Hazard,"Speed of onset 
+(how fast does it show up 
+or become a problem in need of action?)"
+H_DUR,Hazard,"Duration
+(how long does it last if no human action is taken?)"
+H_TIM,Hazard,"Timing of events
+(does this event happen at certain times?)"
+H_LOC,Hazard,"Potential location of events
+(does this event occur in specific places?)"
+H_MAP,Hazard,Ability to map hazard zones
+H_SCALE,Hazard,Scale of direct impact
+C_NH,Cascading hazard,"Potential for cascading geophysical hazards 
+(e.g., earthquake triggers landslides)"
+C_HM,Cascading hazard,"Potential for spreading hazardous material 
+(if present)"
+C_HH,Cascading hazard,Potential for spreading human disease or creating other health hazards
+C_INFR,Cascading hazard,"Potential for causing infrastructure failure hazards (e.g., earthquake damages levee, causing inundation)"
+C_EH,Cascading hazard,"Potential for creating new environmental hazards (e.g., decreased air/water quality)"
+C_FH,Cascading hazard,Potential for creating fire hazards
+C_WDTE,Cascading hazard,Potential for spreading terrestrial wildlife or livestock disease
+C_WDAV,Cascading hazard,Potential for spreading avian disease or health concerns
+C_WDAQ,Cascading hazard,Potential for spreading aquatic disease or health concerns
+C_IST,Cascading hazard,Potential for introducing or spreading terrestrial invasive species
+C_ISA,Cascading hazard,Potential for introducing or spreading aquatic invasive species
+C_ISIN,Cascading hazard,Potential for introducing or increasing infestations
+M_HAZ,Mitigation,"Ability to reduce/modify the hazard 
+(e.g., eliminate at the source, redirect path)"
+M_MIT,Mitigation,"Ability to further protect populations, assets or resources"
+M_WARN,Mitigation,Warning or detection ability
+M_CONT,Mitigation,Ability to control or avoid event as it occurs
+M_EVAC,Mitigation,Ability to evacuate before hazard arrival
+I_HUM,Direct impacts,Impact to individual humans
+I_WILD,Direct impacts,Impact to wildlife
+I_DEB,Direct impacts,Amount of debris
+I_TRL,Direct impacts,Impact to land-based transportation
+I_TRW,Direct impacts,Impact to water-based transportation
+I_TRA,Direct impacts,Impact to air transportation
+I_QW,Direct impacts,Impact to water quality
+I_QA,Direct impacts,Impact to air quality
+I_QS,Direct impacts,Impact to soil quality
+I_NRHG,Direct impacts,"Impact to natural resources 
+(subsistence hunting and gathering)"
+I_NRAG,Direct impacts,"Impact to natural resources
+(agriculture, aquaculture, timber, grazing)"
+I_NRRO,Direct impacts,Impact to recreational opportunities
+I_NREC,Direct impacts,"Impact to energy and mineral resources
+(e.g., mines, oil extraction)"
+I_CARCH,Direct impacts,Impact to cultural resources: Archaeological sites*
+I_CMUS,Direct impacts,Impact to cultural resources: Museum/Archival*
+I_CCUL,Direct impacts,Impact to cultural resources: Cultural Landscapes*
+I_CHIST,Direct impacts,Impact to cultural resources: Historic structures*
+R_FAC,Post-event recovery,Restoration of facilities
+R_INF,Post-event recovery,Restoration of infrastructure
+R_CA,Post-event recovery,Restoration of cultural assets
+R_HAB,Post-event recovery,Restoration of habitats
+R_ECON,Post-event recovery,Restoration of economic resources
+R_COST,Post-event recovery,Cost of impacts 
+R_DISC,Post-event recovery,Potential for displaced communities
+R_LAW,Post-event recovery,Legal implications
+R_BEN,Post-event recovery,Potential benefits
+R_MED,Post-event recovery,Potential media exposure
