@@ -53,13 +53,15 @@ export default function App() {
   // -----------------------------
   // LOAD ALL CSV FILES
   // -----------------------------
-  useEffect(() => {
-    async function loadAll() {
-      try {
-        const [attrRes, hazRes, scoresRes] = await Promise.all([
-          fetch("/attributes.csv"),
-          fetch("/hazards.csv"),
-          fetch("/hazard_attribute_scores_long.csv"),
+useEffect(() => {
+  async function loadAll() {
+    try {
+      const base = import.meta.env.BASE_URL; // e.g. "/survey/"
+
+      const [attrRes, hazRes, scoresRes] = await Promise.all([
+        fetch(base + "attributes.csv"),
+        fetch(base + "hazards.csv"),
+        fetch(base + "hazard_attribute_scores_long.csv"),
         ]);
 
         const [attrText, hazText, scoresText] = await Promise.all([
