@@ -1,0 +1,78 @@
+Hazard Code,Hazard Descriptions
+ADV_AS,Active shooter
+ADV_CDATA,Cyber attack - data
+ADV_CPI,Cyber attack - physical infrastructure
+ADV_CRBO,"Cross border activity
+(including impacts from migrants and law enforcement activities)"
+ADV_SLE,Significant law enforcement incident (e.g. civil unrest/occupation)
+ADV_TEV,Terrorism and Extremist Violence
+FIRE,Wildfire hazard potential
+GEO_CEC,Coastal change:  chronic erosion
+GEO_CES,Coastal change: storm-induced erosion
+GEO_CWL,"Coastal change: long-term total water level change (e.g., sea level rise, subsidence)"
+GEO_CWS,"Coastal change: short-term total water level change 
+(e.g., King Tides, ""sunny day flooding"")"
+GEO_EMAJ,Strong to Major Earthquake (6<M<8) (Crustal/Intraplate earthquake) 
+GEO_EMIN,"Small to Moderate (M<6.0) earthquake (e.g., Natural or Induced earthquake)"
+GEO_ESZ,"Great Earthquake (M>8) (e.g., Subduction Zone)"
+GEO_FF,Flooding (flash flood)
+GEO_FW,Flooding (weather related)
+GEO_FWCS,Coastal change: extreme-storm-induced flooding
+GEO_KARST,Sinkholes (karst subsidence)
+GEO_LSDF,Landslide - post fire debris flow
+GEO_LSF,"Landslide (fast moving, subaerial)"
+GEO_LSMD,"Landslide (slow moving, submarine)"
+GEO_LSS,"Landslide (slow moving, subaerial)"
+GEO_LSSU,"Landslides (fast moving, submarine)"
+GEO_SW,Geo-electric space weather
+GEO_TD,Tsunami - distant event
+GEO_TLP,"Tsunami - local event (point source, e.g., landslide, submarine landslide, volcano)"
+GEO_TLR,"Tsunami - local event (regional seismogenic, e.g., CSZ)"
+GEO_VASH,Volcano - ash
+GEO_VLAH,Volcano - lahar
+GEO_VLAVA,Volcano - lava
+GEO_VOG,Volcano - vog (volcanic smog)
+GEO_VPF,Volcano - proximal (pyroclastic flows)
+GEO_VPLF,Volcano - post-lahar sedimentation and flooding
+MET_COLD,Coldwave
+MET_DRO,Drought
+MET_HAIL,Hail
+MET_HEAT,Extreme heat
+MET_HSS,Hurricane - storm surge
+MET_HWI,Hurricane - winds
+MET_ICE,Icestorm
+MET_LIGH,Lightning
+MET_SNOW,Snow
+MET_TOR,Tornado
+OH_ILG,Illness or injury of DOI employees - General
+OH_ILP,Illness of DOI employees - Viral Pandemic
+OH_ISAQ,Invasives - aquatic
+OH_ISIN,Invasives - infestations
+OH_ISTE,Invasives - terrestrial
+OH_SWP,Water quality - surface water pollutants
+OH_TASB,Toxicological - naturally occurring asbestos or erionite
+OH_THAB,Toxicological - harmful algal blooms
+OH_TMIN,"Toxic soil geochemistry(e.g., Pb, As, Cd, Se)"
+OH_TRAD,Toxicological - radon
+OH_TVFF,Toxicological - Valley Fever soil fungus
+OH_WDAQ,Wildlife disease - aquatic
+OH_WDAV,Wildlife disease - avian
+OH_WDTE,Wildlife disease - terrestrial
+OH_ZANT,Zoonotic  - naturally occurring anthrax
+OH_ZASE,"Zoonotic - animal secretions (e.g., Hantavirus)"
+OH_ZFLE,"Zoonotic - flea-borne (e.g., Plague)"
+OH_ZMOS,Zoonotic - mosquite-borne diseases
+OH_ZRAB,Zoonotic - rabies
+OH_ZTIC,"Zoonotic - tickborne (e.g., Lyme Disease)"
+OH_ZWBD,"Zoonotic - water-borne disease (e.g., cholera)"
+TECH_CONT,Hazardous substance release - Contaminated sites
+TECH_FLTX,Hazardous substance release - Flammable or toxic materials
+TECH_IDAM,Inundation due to failure - dam
+TECH_ILEV,Inundation due to failure - levee
+TECH_INF,"Infrastructure failure (bridge, tunnel)"
+TECH_LFILL,Hazardous substance release - Landfills
+TECH_NGEX,Natural gas leak explosion
+TECH_OIL,Oil spill
+TECH_POW,Powergrid failure
+TECH_RAD,Radiological substance release
+TECH_SUFU,Hazardous substance release - Superfund sites
